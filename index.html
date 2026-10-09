@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Ranjana M. | Assistant Professor & Research Scientist</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    /* Glassmorphism effects */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.08), 0 8px 10px -6px rgba(16, 185, 129, 0.05);
+      border-color: rgba(52, 211, 153, 0.6);
+    }
+    /* Ambient gradient backdrop */
+    .hero-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.12) 0%, rgba(248, 250, 252, 0) 70%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="progressBar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 z-50 transition-all duration-75" style="width: 0%;"></div>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-extrabold text-xl tracking-tight text-slate-900 flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+        Dr. Ranjana M.
+      </a>
+      <div class="space-x-8 text-sm font-medium hidden md:flex items-center">
+        <a href="#about" class="text-slate-600 hover:text-emerald-600 transition">About</a>
+        <a href="#research" class="text-slate-600 hover:text-emerald-600 transition">Research Focus</a>
+        <a href="#publications" class="text-slate-600 hover:text-emerald-600 transition">Publications</a>
+        <a href="#experience" class="text-slate-600 hover:text-emerald-600 transition">Experience</a>
+        <a href="#contact" class="px-4 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition shadow-sm hover:shadow">Connect</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about" class="hero-glow pt-20 pb-16 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="flex-1 space-y-6" data-aos="fade-right" data-aos-duration="900">
+        <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider">
+          <i class="ph-bold ph-buildings"></i> National Institute of Technology Calicut (NITC)
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+          Pioneering <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Molecular Probes</span> & Biosensors
+        </h1>
+        <p class="text-lg text-emerald-800 font-medium">
+          Assistant Professor | Department of Education
+        </p>
+        <p class="text-slate-600 leading-relaxed text-base max-w-2xl">
+          Ph.D. in Chemical Sciences with extensive expertise in functional organic materials, fluorescence diagnostics, and electrochemical sensing platforms. Developing robust translational interfaces for wearable diagnostics and healthcare monitoring.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="https://scholar.google.com/citations?hl=en&user=y52hKXMAAAAJ" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-slate-800 hover:scale-[1.02] transition active:scale-95 shadow">
+            <i class="ph ph-graduation-cap text-lg"></i> Google Scholar
+          </a>
+          <a href="https://orcid.org/0000-0003-2412-4748" target="_blank" class="inline-flex items-center gap-2 glass-card text-slate-700 px-5 py-2.5 rounded-xl text-sm font-semibold hover:scale-[1.02] transition active:scale-95">
+            <i class="ph ph-identification-card text-lg"></i> ORCID ID
+          </a>
+          <a href="mailto:ranjanabhaskaran@gmail.com" class="inline-flex items-center gap-2 border border-emerald-300 text-emerald-700 bg-emerald-50 px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-emerald-100 transition active:scale-95">
+            <i class="ph ph-paper-plane-tilt text-lg"></i> Inquire / Collaborate
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Avatar Card with Floating Elements -->
+      <div class="relative shrink-0" data-aos="fade-left" data-aos-duration="900">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200 relative group">
+          <img src="profile.jpg" alt="Dr. Ranjana M." class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800'">
+        </div>
+        <!-- Metric badge overlay -->
+        <div class="absolute -bottom-4 -left-6 bg-white/95 backdrop-blur-md border border-slate-200 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl font-bold">
+            <i class="ph ph-medal"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Achievement</div>
+            <div class="text-sm font-bold text-slate-800">University Gold Medalist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Research Vision & Pillars -->
+  <section id="research" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+        <h2 class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Key Innovations</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Core Research Thrusts</h3>
+        <p class="text-slate-500 text-sm mt-3">Bridging chemical synthesis, surface engineering, and biomedical diagnostics.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-5">
+            <i class="ph ph-atom"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-3">Functional Organic Probes</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Engineering novel nitronaphthalimide fluorophores and electrochemical markers tailored for specific detection of endogenous gasotransmitters (H₂S) and bio-pathogen tracking.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center text-2xl mb-5">
+            <i class="ph ph-circuit-board"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-3">Wearable Interfaces</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Architecting molecular-nanocarbon composites on flexible matrices, elevating electron transfer kinetics to build ultra-responsive biosensors.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-5">
+            <i class="ph ph-first-aid"></i>
+          </div>
+          <h4 class="text-lg font-bold text-slate-900 mb-3">Point-of-Care Diagnostics</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Translating complex laboratory testing protocols into cost-effective, portable sensory systems suitable for clinical monitoring and environmental testing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Publications & Patent Section -->
+  <section id="publications" class="py-20 max-w-6xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10" data-aos="fade-up">
+      <div>
+        <h2 class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Scholarship</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Patents & Publications</h3>
+        <p class="text-sm text-slate-500 mt-1">14 Published Articles • 1 Published Patent • 92+ Global Citations</p>
+      </div>
+
+      <!-- Controls: Filter buttons & search bar -->
+      <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+        <div class="flex bg-slate-200/70 p-1 rounded-xl text-xs font-semibold">
+          <button class="filter-btn px-3 py-1.5 rounded-lg bg-white shadow-sm text-slate-900" data-filter="all">All</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900" data-filter="2025">2025</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900" data-filter="2024">2024</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900" data-filter="prior">Earlier</button>
+          <button class="filter-btn px-3 py-1.5 rounded-lg text-slate-600 hover:text-slate-900" data-filter="patent">Patent</button>
+        </div>
+        <div class="relative">
+          <input type="text" id="searchInput" placeholder="Filter by keyword..." class="w-full sm:w-56 pl-9 pr-3 py-2 bg-white border border-slate-300 rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm">
+          <i class="ph ph-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-sm"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patent Card -->
+    <div class="pub-card patent mb-6 p-6 rounded-2xl bg-amber-50/70 border border-amber-300/80 shadow-sm flex items-start gap-5 hover:border-amber-400 transition" data-aos="fade-up" data-year="2025" data-type="patent">
+      <div class="p-3 bg-amber-500 text-white rounded-xl shadow-md shrink-0">
+        <i class="ph-bold ph-certificate text-2xl"></i>
+      </div>
+      <div class="space-y-1.5 flex-1">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-200/80 px-2.5 py-0.5 rounded-md">Indian Patent Published</span>
+          <span class="text-xs text-slate-500">Jan 03, 2025</span>
+        </div>
+        <h4 class="text-base font-bold text-slate-900 leading-snug">
+          Naphthalimide-based fluorophore for detection of yeast, method of preparation thereof, and staining formulation
+        </h4>
+        <p class="text-xs text-slate-600">
+          <strong>Inventors:</strong> Ranjana, M.; Sunil, D.; Yegneswaran, P. P.; Upadhya, D. | <strong>Application No:</strong> 202441103743
+        </p>
+      </div>
+    </div>
+
+    <!-- Publications Dynamic Grid/List -->
+    <div id="publicationsContainer" class="space-y-4"></div>
+  </section>
+
+  <!-- Interactive Timeline Experience -->
+  <section id="experience" class="py-20 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Academic Journey</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900 mt-2">Appointments & Research Experience</h3>
+      </div>
+
+      <div class="relative border-l-2 border-emerald-300/60 ml-4 md:ml-32 space-y-12">
+        
+        <!-- Experience 1 -->
+        <div class="relative pl-8 group" data-aos="fade-up">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-emerald-600 group-hover:scale-125 transition"></div>
+          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Present</span>
+          <h4 class="text-lg font-bold text-slate-900 mt-0.5">Assistant Professor</h4>
+          <p class="text-xs font-semibold text-slate-500">National Institute of Technology Calicut (NITC), Kerala</p>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Faculty in the Department of Education, establishing core research investigations on flexible electrode platforms and advanced molecular sensors.
+          </p>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="relative pl-8 group" data-aos="fade-up">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-slate-400 group-hover:border-emerald-600 group-hover:scale-125 transition"></div>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2021 – 2025</span>
+          <h4 class="text-lg font-bold text-slate-900 mt-0.5">Ph.D. Research Scholar</h4>
+          <p class="text-xs font-semibold text-slate-500">Manipal Institute of Technology, MAHE (CGPA: 8.83)</p>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Engineered nitronaphthalimide-based multifunction probes for optical/electrochemical detection of H₂S; optimized redox properties, cellular stability, and bioimaging protocols.
+          </p>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="relative pl-8 group" data-aos="fade-up">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-slate-400 group-hover:border-emerald-600 group-hover:scale-125 transition"></div>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">July 2023 – Sept 2023</span>
+          <h4 class="text-lg font-bold text-slate-900 mt-0.5">Visiting Research Scholar</h4>
+          <p class="text-xs font-semibold text-slate-500">Aalto University, Espoo, Finland</p>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Collaborated on advanced nanoscale material characterization, XPS deconvolution, and international interdisciplinary research benchmarks.
+          </p>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="relative pl-8 group" data-aos="fade-up">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-slate-400 group-hover:border-emerald-600 group-hover:scale-125 transition"></div>
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">2020 – 2021 & 2019</span>
+          <h4 class="text-lg font-bold text-slate-900 mt-0.5">Project Assistant</h4>
+          <p class="text-xs font-semibold text-slate-500">IISER Thiruvananthapuram & CSIR-CSMCRI Gujarat</p>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+            Investigated N-C-B active sites for electrocatalytic oxygen reduction reactions (IISER TVM) and carried out catalytic olefin hydroformylations (CSMCRI).
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail Modal -->
+  <div id="citationModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative border border-slate-100">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="inline-block px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 text-xs font-bold mb-3" id="modalJournal"></div>
+      <h3 class="font-bold text-slate-900 text-base leading-snug" id="modalTitle"></h3>
+      <p class="text-xs text-slate-600 mt-3" id="modalAuthors"></p>
+      
+      <div class="mt-6 pt-4 border-t border-slate-100 flex justify-end gap-3">
+        <button id="copyBtn" onclick="copyCitation()" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-semibold hover:bg-slate-800 transition flex items-center gap-1.5">
+          <i class="ph ph-copy"></i> Copy Citation
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-slate-900 text-slate-400 py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+      <h3 class="text-xl font-bold text-white">Dr. Ranjana M.</h3>
+      <p class="text-sm text-slate-400">Assistant Professor • Department of Education • NIT Calicut</p>
+      <div class="flex justify-center gap-6 pt-2">
+        <a href="mailto:ranjanabhaskaran@gmail.com" class="hover:text-emerald-400 transition flex items-center gap-1.5 text-sm">
+          <i class="ph ph-envelope text-lg"></i> ranjanabhaskaran@gmail.com
+        </a>
+        <span class="text-slate-600">•</span>
+        <span class="text-sm flex items-center gap-1.5"><i class="ph ph-phone text-lg"></i> +91 6282009434</span>
+      </div>
+      <p class="text-xs text-slate-600 pt-8 border-t border-slate-800">
+        Hosted with lifetime zero-cost maintenance via GitHub Pages.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize Scroll Animations
+    AOS.init({ once: true, offset: 40 });
+
+    // Scroll Progress Bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progressBar').style.width = scrolled + '%';
+    });
+
+    // All 14 Publications Data from publication records
+    const publications = [
+      {
+        title: "Fluorene-naphthalimide hybrid: An electrochemical and fluorescent probe for detection and imaging of hydrogen sulfide dynamics in cellular environments",
+        authors: "M. Ranjana, M.S. Shrilaxmi, Anshuman Bera, Dhanya Sunil, Y.N. Sudhakar, Dinesh Upadhya, et al.",
+        journal: "Microchemical Journal",
+        year: "2025",
+        volume: "",
+        pages: ""
+      },
+      {
+        title: "A versatile electrochemical, colorimetric, and visible light excitable turn-on fluorescent probe for stress-induced H2S detection",
+        authors: "Dinesh, M. Ranjana, M. S. Shrilaxmi, Probal Nag, Prajoy Kumar Mitra, Dhanya Sunil, et al.",
+        journal: "Photochemical & Photobiological Sciences",
+        year: "2025",
+        volume: "",
+        pages: ""
+      },
+      {
+        title: "Triazole-hydroxy naphthalimide hybrid as a fluorescent molecular tool for antifungal therapy and imaging: Experimental and theoretical investigations",
+        authors: "Smitha G, Ranjana M, Thripthi Nagesh Shenoy, Dhanya Sunil, Abdul Ajees Abdul Salam, et al.",
+        journal: "Journal of Molecular Structure",
+        year: "2025",
+        volume: "",
+        pages: ""
+      },
+      {
+        title: "A multifunctional probe for optical and electrochemical detection of hydrogen sulfide and real-time selective fungal imaging",
+        authors: "Ranjana M., Namita N. Kashyap, Dhanya Sunil, Anshuman Bera, Prajoy Kumar Mitra, et al.",
+        journal: "Analyst (Royal Society of Chemistry)",
+        year: "2025",
+        volume: "",
+        pages: ""
+      },
+      {
+        title: "Synthesis and purification of carbon dots from fluorescent precursors as colorant for fluorescent ink",
+        authors: "Ullal, Namratha; Ranjana, M.; Adithya, B. K.; and Sunil, Dhanya",
+        journal: "Journal of Coatings Technology and Research",
+        year: "2025",
+        volume: "23",
+        pages: "363–372"
+      },
+      {
+        title: "Indole-functionalized naphthalimide: a dual electrochemical and ratiometric fluorescent sensor for detection of hydrogen sulfide",
+        authors: "Ranjana M., Anshuman Bera, Namita N. Kashyap, Dhanya Sunil, Sudhakar Y. N., Dinesh Upadhya, et al.",
+        journal: "Discover Applied Sciences (Springer)",
+        year: "2025",
+        volume: "",
+        pages: ""
+      },
+      {
+        title: "Small molecule optical probes for detection of H2S in water samples: A review",
+        authors: "Kulkarni, Rashmi M; Ranjana, M; Sunil, Dhanya",
+        journal: "ACS Omega",
+        year: "2024",
+        volume: "9",
+        pages: "14672-14691"
+      },
+      {
+        title: "A Versatile pH-dependent Fluorometric, Colorimetric, and Electrochemical Sensor for H2S Monitoring in Water",
+        authors: "Rashmi M. Kulkarni, M Ranjana, Namratha Ullal, Dhanya Sunil",
+        journal: "Journal of Fluorescence",
+        year: "2024",
+        volume: "",
+        pages: ""
+      },
+      {
+        title: "Chemical synthesis and analytical profiling of NTSH: a versatile probe for hydrogen sulfide sensing and cellular imaging",
+        authors: "Ranjana M, Namita N Kashyap, Prajoy Kumar Mitra, Dhanya Sunil, Sudhakar Y N, et al.",
+        journal: "Materials Research Express (IOP)",
+        year: "2024",
+        volume: "11",
+        pages: "115101"
+      },
+      {
+        title: "Ethylenediamine Mediated, Environmentally Benign Synthesis of Copper Nanowires and their Catalytic Activity Towards 4‐Nitrophenol Reduction",
+        authors: "Ranjana, Mankunnan; Sahu, Puspanjali; Ramesh, Veera VE; Babu, T.G. Satheesh; Kumar, Darbha V Ravi",
+        journal: "ChemistrySelect",
+        year: "2023",
+        volume: "8",
+        pages: "e202204351"
+      },
+      {
+        title: "Naphthalimide derivatives as fluorescent probes for imaging endogenous gasotransmitters",
+        authors: "Ranjana, M. & Sunil, Dhanya",
+        journal: "Chemico-Biological Interactions",
+        year: "2022",
+        volume: "363",
+        pages: "110022"
+      },
+      {
+        title: "Aggregation induced, formaldehyde tailored nanowire like networks of Cu and their SERS activity",
+        authors: "Athira, K; Ranjana, M; Bharathi, MSS; Babu, TG Satheesh; Rao, S Venugopal; Kumar, Darbha V Ravi",
+        journal: "Chemical Physics Letters",
+        year: "2020",
+        volume: "748",
+        pages: "137390"
+      },
+      {
+        title: "Hydrazine free synthesis of Cu nanostructures: Exploring vitamin-C as environmental benign reducing agent to synthesize Cu nanowires",
+        authors: "Ranjana, M; Babu, TG; Kumar, DV",
+        journal: "Journal of the Indian Chemical Society",
+        year: "2019",
+        volume: "96",
+        pages: "121-125"
+      },
+      {
+        title: "Sophorolipid induced hydrothermal synthesis of Cu nanowires and its modulating effect on Cu nanostructures",
+        authors: "Ranjana, M; Ramesh, Veera VE; Babu, TG Satheesh; Kumar, Darbha V Ravi",
+        journal: "Nano-Structures & Nano-Objects",
+        year: "2019",
+        volume: "18",
+        pages: "100285"
+      }
+    ];
+
+    // Render Publications Cards
+    const container = document.getElementById('publicationsContainer');
+    
+    function renderPubs(items) {
+      container.innerHTML = '';
+      items.forEach((pub, index) => {
+        const card = document.createElement('div');
+        card.className = 'pub-card glass-card p-5 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4 cursor-pointer';
+        card.setAttribute('data-year', pub.year);
+        card.setAttribute('data-type', 'article');
+        card.setAttribute('onclick', `openModal(${index})`);
+        
+        card.innerHTML = `
+          <div class="space-y-1 max-w-3xl">
+            <h4 class="font-bold text-slate-900 text-sm md:text-base leading-snug hover:text-emerald-700 transition">
+              ${pub.title}
+            </h4>
+            <p class="text-xs text-slate-500 line-clamp-1">${pub.authors}</p>
+            <p class="text-xs font-semibold text-emerald-800">${pub.journal} ${pub.volume ? `• Vol ${pub.volume}` : ''}</p>
+          </div>
+          <div class="shrink-0 flex items-center gap-3">
+            <span class="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-700 rounded-lg border border-emerald-100">${pub.year}</span>
+            <i class="ph ph-arrow-up-right text-slate-400 text-sm"></i>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    renderPubs(publications);
+
+    // Filtering logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('searchInput');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-white', 'shadow-sm', 'text-slate-900');
+          b.classList.add('text-slate-600');
+        });
+        btn.classList.add('bg-white', 'shadow-sm', 'text-slate-900');
+        btn.classList.remove('text-slate-600');
+
+        const filter = btn.dataset.filter;
+        applyFilters(filter, searchInput.value);
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      const activeBtn = document.querySelector('.filter-btn.bg-white');
+      applyFilters(activeBtn.dataset.filter, e.target.value);
+    });
+
+    function applyFilters(filter, searchTerm) {
+      const term = searchTerm.toLowerCase();
+      const patentCard = document.querySelector('.pub-card.patent');
+      
+      // Patent display
+      if (filter === 'all' || filter === 'patent' || filter === '2025') {
+        patentCard.style.display = patentCard.textContent.toLowerCase().includes(term) ? 'flex' : 'none';
+      } else {
+        patentCard.style.display = 'none';
+      }
+
+      // Filter publications array
+      const filtered = publications.filter(p => {
+        const matchesYear = (filter === 'all' || filter === 'patent') ? true :
+                            (filter === '2025') ? p.year === '2025' :
+                            (filter === '2024') ? p.year === '2024' :
+                            (filter === 'prior') ? parseInt(p.year) < 2024 : true;
+        const matchesSearch = p.title.toLowerCase().includes(term) || 
+                              p.journal.toLowerCase().includes(term) || 
+                              p.authors.toLowerCase().includes(term);
+        return matchesYear && matchesSearch;
+      });
+
+      renderPubs(filter === 'patent' ? [] : filtered);
+    }
+
+    // Modal Details & Citation Copy
+    let currentPub = null;
+    function openModal(idx) {
+      currentPub = publications[idx];
+      document.getElementById('modalJournal').textContent = currentPub.journal + (currentPub.year ? ` (${currentPub.year})` : '');
+      document.getElementById('modalTitle').textContent = currentPub.title;
+      document.getElementById('modalAuthors').textContent = "Authors: " + currentPub.authors;
+      
+      const modal = document.getElementById('citationModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('citationModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function copyCitation() {
+      if(!currentPub) return;
+      const citeStr = `${currentPub.authors}. "${currentPub.title}." ${currentPub.journal} (${currentPub.year}).`;
+      navigator.clipboard.writeText(citeStr).then(() => {
+        const btn = document.getElementById('copyBtn');
+        btn.innerHTML = `<i class="ph ph-check"></i> Copied!`;
+        setTimeout(() => {
+          btn.innerHTML = `<i class="ph ph-copy"></i> Copy Citation`;
+        }, 2000);
+      });
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('citationModal');
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>

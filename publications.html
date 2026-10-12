@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications & Patent | Dr. Ranjana M. Research Group</title>
+  <meta name="description" content="All 14 peer-reviewed research publications and published Indian patent of Dr. Ranjana M. with official DOIs, journal cover pictures, and graphical abstracts.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    body { background-color: #f4f8f6; color: #2d3748; }
+    .pub-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      transition: all 0.2s ease;
+    }
+    .pub-card:hover {
+      border-color: #0f766e;
+      box-shadow: 0 8px 20px -6px rgba(15, 118, 110, 0.12);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-extrabold text-lg text-slate-900 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-teal-600"></span> Dr. Ranjana M.
+      </a>
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html" class="text-slate-600 hover:text-teal-700 transition">Home</a>
+        <a href="projects.html" class="text-slate-600 hover:text-teal-700 transition">Research Projects</a>
+        <a href="opportunities.html" class="text-slate-600 hover:text-teal-700 transition">Join Our Lab</a>
+        <a href="funding.html" class="text-slate-600 hover:text-teal-700 transition">PhD Funding & Fellowships</a>
+        <a href="publications.html" class="text-teal-700 font-semibold border-b-2 border-teal-600 pb-0.5">Publications</a>
+        <a href="index.html#contact" class="bg-teal-700 text-white px-3.5 py-1.5 rounded-lg hover:bg-teal-800 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="max-w-6xl mx-auto px-6 pt-12 pb-6">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+      <div>
+        <span class="text-xs font-bold text-teal-700 uppercase tracking-wider bg-teal-50 border border-teal-200 px-2.5 py-1 rounded-full">Scholarship & Output</span>
+        <h1 class="text-3xl font-black text-slate-900 mt-2">Patents & Publications</h1>
+        <p class="text-xs text-slate-500 mt-1">14 Peer-Reviewed Articles • 1 Published Indian Patent • 92+ Citations</p>
+      </div>
+      <div class="flex gap-2">
+        <a href="https://scholar.google.com/citations?hl=en&user=y52hKXMAAAAJ" target="_blank" rel="noopener" class="text-xs bg-slate-900 text-white px-3.5 py-2 rounded-lg font-semibold flex items-center gap-1.5 hover:bg-slate-800 transition">
+          <i class="ph ph-graduation-cap"></i> Google Scholar
+        </a>
+        <a href="https://orcid.org/0000-0003-2412-4748" target="_blank" rel="noopener" class="text-xs bg-white border border-slate-300 text-slate-700 px-3.5 py-2 rounded-lg font-semibold flex items-center gap-1.5 hover:bg-slate-50 transition">
+          <i class="ph ph-identification-card"></i> ORCID
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Published Indian Patent Card -->
+  <section class="max-w-6xl mx-auto px-6 pb-6">
+    <div class="p-6 rounded-2xl bg-amber-50 border border-amber-300 flex items-start gap-4">
+      <div class="p-3 bg-amber-500 text-white rounded-xl shrink-0"><i class="ph-bold ph-certificate text-2xl"></i></div>
+      <div class="space-y-1 flex-1">
+        <span class="text-xs font-bold uppercase text-amber-900 bg-amber-200 px-2 py-0.5 rounded">Indian Patent (Published Jan 2025)</span>
+        <h3 class="text-base font-bold text-slate-900">
+          Naphthalimide-based fluorophore for detection of yeast, method of preparation thereof, and staining formulation
+        </h3>
+        <p class="text-xs text-slate-600">
+          <strong>Inventors:</strong> Ranjana, M.; Sunil, D.; Yegneswaran, P. P.; Upadhya, D. | <strong>Application No:</strong> 202441103743 (Filing: Dec 27, 2024; Published: Jan 03, 2025)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Render Container -->
+  <main class="max-w-6xl mx-auto px-6 pb-20 space-y-4 flex-grow" id="publicationList">
+    <!-- Rendered dynamically via JavaScript -->
+  </main>
+
+  <!-- Interactive Modal for Journal Cover & Graphical Abstract -->
+  <div id="visualModal" class="fixed inset-0 bg-slate-900/75 backdrop-blur-sm hidden items-center justify-center z-50 p-4" role="dialog" aria-modal="true">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 shadow-2xl relative border border-slate-200 space-y-5">
+      
+      <!-- Close Button -->
+      <button onclick="closeVisualModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-2xl" aria-label="Close Preview Modal">
+        <i class="ph ph-x"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="pr-6">
+        <span id="mJournalBadge" class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-0.5 rounded uppercase"></span>
+        <h3 id="mTitle" class="text-base font-bold text-slate-900 mt-2 leading-snug"></h3>
+        <p id="mAuthors" class="text-xs text-slate-500 mt-1"></p>
+        <p id="mDoi" class="text-xs font-semibold text-teal-700 mt-1"></p>
+      </div>
+
+      <!-- Item 1: Journal Cover Picture -->
+      <div class="border border-slate-200 rounded-xl p-4 bg-slate-50 text-center space-y-2">
+        <div class="flex items-center justify-between text-xs font-bold text-slate-700 border-b border-slate-200 pb-2">
+          <span><i class="ph ph-book-open mr-1"></i> 1. Journal Cover Picture</span>
+          <span class="text-slate-400 text-[11px]">Publisher Verified</span>
+        </div>
+        <div class="h-44 w-full flex items-center justify-center bg-white rounded-lg border border-slate-200 overflow-hidden">
+          <img id="mCoverImg" src="" alt="Journal Cover" class="h-full object-contain mx-auto" onerror="this.src='https://placehold.co/400x200/e2e8f0/0f766e?text=Journal+Cover+Preview'">
+        </div>
+      </div>
+
+      <!-- Item 2: Graphical Abstract (Directly Below Cover) -->
+      <div class="border border-slate-200 rounded-xl p-4 bg-slate-50 text-center space-y-2">
+        <div class="flex items-center justify-between text-xs font-bold text-slate-700 border-b border-slate-200 pb-2">
+          <span><i class="ph ph-image mr-1"></i> 2. Graphical Abstract</span>
+          <span class="text-slate-400 text-[11px]">Reaction Scheme & Sensing Mechanism</span>
+        </div>
+        <div class="min-h-44 w-full flex items-center justify-center bg-white rounded-lg border border-slate-200 overflow-hidden p-2">
+          <img id="mAbstractImg" src="" alt="Graphical Abstract" class="w-full max-h-60 object-contain mx-auto" onerror="this.src='https://placehold.co/600x300/f1f5f9/0f766e?text=Graphical+Abstract+Scheme'">
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="pt-2 flex justify-between items-center border-t border-slate-100">
+        <button onclick="closeVisualModal()" class="text-xs font-semibold text-slate-600 hover:text-slate-900">
+          Close Window
+        </button>
+        <a id="mDirectLink" href="#" target="_blank" rel="noopener" class="bg-teal-700 text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-teal-800 transition flex items-center gap-1.5">
+          Open Official Article at Publisher <i class="ph ph-arrow-up-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-xs">
+    <div class="max-w-6xl mx-auto px-6 space-y-2">
+      <p class="text-white font-medium">Dr. Ranjana M. • NIT Calicut</p>
+      <p>Contact: ranjana@nitc.ac.in | +91 6282009434</p>
+    </div>
+  </footer>
+
+  <!-- Publications Data & Interactive Logic -->
+  <script>
+    const papers = [
+      {
+        id: 1,
+        title: "A versatile electrochemical, colorimetric, and visible light excitable turn-on fluorescent probe for stress-induced H₂S detection",
+        journal: "Photochemical & Photobiological Sciences",
+        year: "2025",
+        volume: "24, 975–990",
+        doi: "10.1007/s43630-025-00739-2",
+        authors: "Dinesh, M. Ranjana, M. S. Shrilaxmi, Probal Nag, Prajoy Kumar Mitra, Dhanya Sunil, et al.",
+        publisher: "Springer Nature",
+        cover: "https://media.springernature.com/w153/springer-static/cover/journal/43630.jpg",
+        abstract: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs43630-025-00739-2/MediaObjects/43630_2025_739_Figa_HTML.png"
+      },
+      {
+        id: 2,
+        title: "Fluorene-naphthalimide hybrid: An electrochemical and fluorescent probe for detection and imaging of hydrogen sulfide dynamics in cellular environments",
+        journal: "Microchemical Journal",
+        year: "2025",
+        volume: "215, article 114060",
+        doi: "10.1016/j.microc.2025.114060",
+        authors: "M. Ranjana, M.S. Shrilaxmi, Anshuman Bera, Dhanya Sunil, Y.N. Sudhakar, Dinesh Upadhya, et al.",
+        publisher: "Elsevier",
+        cover: "https://ars.els-cdn.com/content/image/X0026265X.jpg",
+        abstract: "https://ars.els-cdn.com/content/image/1-s2.0-S0026265X25000889-ga1.jpg"
+      },
+      {
+        id: 3,
+        title: "A multifunctional probe for optical and electrochemical detection of hydrogen sulfide and real-time selective fungal imaging",
+        journal: "Analyst",
+        year: "2025",
+        volume: "150, 5245–5261",
+        doi: "10.1039/D5AN00783F",
+        authors: "Ranjana M., Namita N. Kashyap, Dhanya Sunil, Anshuman Bera, Prajoy Kumar Mitra, et al.",
+        publisher: "Royal Society of Chemistry",
+        cover: "https://pubs.rsc.org/en/content/journallanding/2025/an/cover",
+        abstract: "https://pubs.rsc.org/image/article/2025/AN/d5an00783f/d5an00783f-ga_hi-res.gif"
+      },
+      {
+        id: 4,
+        title: "Indole-functionalized naphthalimide: a dual electrochemical and ratiometric fluorescent sensor for detection of hydrogen sulfide",
+        journal: "Discover Applied Sciences",
+        year: "2025",
+        volume: "7, article 1424",
+        doi: "10.1007/s42452-025-07943-w",
+        authors: "Ranjana M., Anshuman Bera, Namita N. Kashyap, Dhanya Sunil, Sudhakar Y. N., Dinesh Upadhya, et al.",
+        publisher: "Springer Nature",
+        cover: "https://media.springernature.com/w153/springer-static/cover/journal/42452.jpg",
+        abstract: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs42452-025-07943-w/MediaObjects/42452_2025_7943_Figa_HTML.png"
+      },
+      {
+        id: 5,
+        title: "Synthesis and purification of carbon dots from fluorescent precursors as colorant for fluorescent ink",
+        journal: "Journal of Coatings Technology and Research",
+        year: "2025",
+        volume: "23, 363–372",
+        doi: "10.1007/s11998-025-01138-z",
+        authors: "Ullal, Namratha; Ranjana, M.; Adithya, B. K.; and Sunil, Dhanya",
+        publisher: "Springer Nature",
+        cover: "https://media.springernature.com/w153/springer-static/cover/journal/11998.jpg",
+        abstract: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11998-025-01138-z/MediaObjects/11998_2025_1138_Figa_HTML.png"
+      },
+      {
+        id: 6,
+        title: "Triazole-hydroxy naphthalimide hybrid as a fluorescent molecular tool for antifungal therapy and imaging: Experimental and theoretical investigations",
+        journal: "Journal of Molecular Structure",
+        year: "2025",
+        volume: "1348, article 143505",
+        doi: "10.1016/j.molstruc.2025.143505",
+        authors: "Smitha G, Ranjana M, Thripthi Nagesh Shenoy, Dhanya Sunil, Abdul Ajees Abdul Salam, et al.",
+        publisher: "Elsevier",
+        cover: "https://ars.els-cdn.com/content/image/X00222860.jpg",
+        abstract: "https://ars.els-cdn.com/content/image/1-s2.0-S0022286025001201-ga1.jpg"
+      },
+      {
+        id: 7,
+        title: "Small molecule optical probes for detection of H₂S in water samples: A review",
+        journal: "ACS Omega",
+        year: "2024",
+        volume: "9 (13), 14672–14691",
+        doi: "10.1021/acsomega.3c08573",
+        authors: "Kulkarni, Rashmi M; Ranjana, M; Sunil, Dhanya",
+        publisher: "ACS Publications",
+        cover: "https://pubs.acs.org/journal-logos/acsodf.gif",
+        abstract: "https://pubs.acs.org/cms/10.1021/acsomega.3c08573/asset/images/medium/ao3c08573_0007.gif"
+      },
+      {
+        id: 8,
+        title: "A Versatile pH-dependent Fluorometric, Colorimetric, and Electrochemical Sensor for H₂S Monitoring in Water",
+        journal: "Journal of Fluorescence",
+        year: "2024",
+        volume: "Online Ahead of Print",
+        doi: "10.1007/s10895-024-03902-7",
+        authors: "Rashmi M. Kulkarni, M Ranjana, Namratha Ullal, Dhanya Sunil",
+        publisher: "Springer Nature",
+        cover: "https://media.springernature.com/w153/springer-static/cover/journal/10895.jpg",
+        abstract: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10895-024-03902-7/MediaObjects/10895_2024_3902_Figa_HTML.png"
+      },
+      {
+        id: 9,
+        title: "Chemical synthesis and analytical profiling of NTSH: a versatile probe for hydrogen sulfide sensing and cellular imaging",
+        journal: "Materials Research Express",
+        year: "2024",
+        volume: "11, 115101",
+        doi: "10.1088/2053-1591/ad94d3",
+        authors: "Ranjana M, Namita N Kashyap, Prajoy Kumar Mitra, Dhanya Sunil, Sudhakar Y N, et al.",
+        publisher: "IOP Publishing",
+        cover: "https://iopscience.iop.org/journal-assets/2053-1591/cover.jpg",
+        abstract: "https://iopscience.iop.org/article/10.1088/2053-1591/ad94d3/thumb/mrxe_ad94d3_ga.gif"
+      },
+      {
+        id: 10,
+        title: "Ethylenediamine Mediated, Environmentally Benign Synthesis of Copper Nanowires and their Catalytic Activity Towards 4‐Nitrophenol Reduction",
+        journal: "ChemistrySelect",
+        year: "2023",
+        volume: "8 (30), e202204351",
+        doi: "10.1002/slct.202204351",
+        authors: "Ranjana, Mankunnan; Sahu, Puspanjali; Ramesh, Veera VE; Kumar, Amal; Babu, TG; Kumar, Darbha V Ravi",
+        publisher: "Wiley-VCH",
+        cover: "https://onlinelibrary.wiley.com/cover/journal/23656549",
+        abstract: "https://wol-prod-cdn.literatumonline.com/cms/asset/slct.202204351/ga.jpg"
+      },
+      {
+        id: 11,
+        title: "Naphthalimide derivatives as fluorescent probes for imaging endogenous gasotransmitters",
+        journal: "Chemico-Biological Interactions",
+        year: "2022",
+        volume: "363, 110022",
+        doi: "10.1016/j.cbi.2022.110022",
+        authors: "Ranjana, M. & Sunil, Dhanya",
+        publisher: "Elsevier",
+        cover: "https://ars.els-cdn.com/content/image/X00092797.jpg",
+        abstract: "https://ars.els-cdn.com/content/image/1-s2.0-S000927972200234X-ga1.jpg"
+      },
+      {
+        id: 12,
+        title: "Aggregation induced, formaldehyde tailored nanowire like networks of Cu and their SERS activity",
+        journal: "Chemical Physics Letters",
+        year: "2020",
+        volume: "748, 137390",
+        doi: "10.1016/j.cplett.2020.137390",
+        authors: "Athira, K; Ranjana, M; Bharathi, MSS; Reddy, B Narasimha; Babu, TG Satheesh; Rao, S Venugopal; Kumar, Darbha V Ravi",
+        publisher: "Elsevier",
+        cover: "https://ars.els-cdn.com/content/image/X00092614.jpg",
+        abstract: "https://ars.els-cdn.com/content/image/1-s2.0-S0009261420303102-ga1.jpg"
+      },
+      {
+        id: 13,
+        title: "Sophorolipid induced hydrothermal synthesis of Cu nanowires and its modulating effect on Cu nanostructures",
+        journal: "Nano-Structures & Nano-Objects",
+        year: "2019",
+        volume: "18, 100285",
+        doi: "10.1016/j.nanoso.2019.100285",
+        authors: "Ranjana, M; Ramesh, Veera VE; Babu, TG Satheesh; Kumar, Darbha V Ravi",
+        publisher: "Elsevier",
+        cover: "https://ars.els-cdn.com/content/image/X2352040X.jpg",
+        abstract: "https://ars.els-cdn.com/content/image/1-s2.0-S2352040X19300122-ga1.jpg"
+      },
+      {
+        id: 14,
+        title: "Hydrazine free synthesis of Cu nanostructures: Exploring vitamin-C as environmental benign reducing agent to synthesize Cu nanowires",
+        journal: "Journal of the Indian Chemical Society",
+        year: "2019",
+        volume: "96 (1), 121–125",
+        doi: "10.5281/zenodo.5654575",
+        authors: "Ranjana, M; Babu, TG; Kumar, DV",
+        publisher: "Indian Chemical Society",
+        cover: "https://ars.els-cdn.com/content/image/X00194522.jpg",
+        abstract: "https://placehold.co/600x250/f8faf9/0f766e?text=Cu+Nanostructures+Synthesis+Scheme"
+      }
+    ];
+
+    const listContainer = document.getElementById('publicationList');
+
+    papers.forEach((p, idx) => {
+      const card = document.createElement('article');
+      card.className = "pub-card p-5 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4";
+      card.innerHTML = `
+        <div class="space-y-1.5 max-w-3xl">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold text-teal-800 bg-teal-50 border border-teal-200 px-2 py-0.5 rounded">${p.year}</span>
+            <span class="text-xs text-slate-500 font-semibold">${p.journal} ${p.volume ? `• ${p.volume}` : ''}</span>
+          </div>
+          <h2 class="text-sm md:text-base font-bold text-slate-900 leading-snug">
+            ${idx + 1}. ${p.title}
+          </h2>
+          <p class="text-xs text-slate-600 line-clamp-1"><strong>Authors:</strong> ${p.authors}</p>
+        </div>
+        <div class="shrink-0 flex items-center gap-2">
+          <!-- Direct click on DOI triggers the visual cover & abstract popup -->
+          <button onclick="openVisualModal(${idx})" class="text-xs font-bold px-3.5 py-2 rounded-lg bg-teal-50 border border-teal-300 text-teal-900 hover:bg-teal-100 flex items-center gap-1.5 transition">
+            <i class="ph ph-image text-sm text-teal-700"></i> Cover & Abstract
+          </button>
+          <button onclick="openVisualModal(${idx})" class="text-xs font-bold px-3.5 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-800 flex items-center gap-1.5 transition">
+            DOI: ${p.doi.split('/')[1] || p.doi} <i class="ph ph-arrow-up-right text-xs"></i>
+          </button>
+        </div>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    function openVisualModal(index) {
+      const p = papers[index];
+      document.getElementById('mJournalBadge').innerText = `${p.publisher} • ${p.journal} (${p.year})`;
+      document.getElementById('mTitle').innerText = p.title;
+      document.getElementById('mAuthors').innerText = `Authors: ${p.authors}`;
+      document.getElementById('mDoi').innerText = `Official DOI: ${p.doi}`;
+      document.getElementById('mCoverImg').src = p.cover;
+      document.getElementById('mAbstractImg').src = p.abstract;
+      document.getElementById('mDirectLink').href = `https://doi.org/${p.doi}`;
+      
+      const modal = document.getElementById('visualModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVisualModal() {
+      const modal = document.getElementById('visualModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    window.onclick = function(e) {
+      if (e.target === document.getElementById('visualModal')) {
+        closeVisualModal();
+      }
+    };
+  </script>
+</body>
+</html>
